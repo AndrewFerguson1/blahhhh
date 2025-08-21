@@ -4,18 +4,21 @@ class person ():
         self.age = 17 # Integer
         self.colour = 'White' # String
 
-def get_name(self):
-    return self.name
+    def get_name(self):
+        return self.name
 
-def get_age(self):
-    return self.age
+    def get_age(self):
+        return self.age
 
-def get_colour(self):
-    return self.colour
+    def get_colour(self):
+        return self.colour
 
-def setName(self, newName):
-    self.name = newName
+    def setName(self, newName):
+        self.name = newName
 
 # outside of class definition
 people = [person() for x in range(10)]
-print(people[0].get_name())
+print(people[0].get_name()) # OOP FTW!
+for x in range(10):
+    newName = input("Enter new name: ")
+    people[x].setName(newName)
