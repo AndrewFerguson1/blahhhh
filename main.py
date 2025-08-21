@@ -11,7 +11,7 @@ def get_age(self):
     return self.age
 
 def get_colour(self):
-    return colour.self
+    return self.colour
 
 def setName(self, newName):
     self.name = newName
